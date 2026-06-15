@@ -1,15 +1,18 @@
 """
-Propósito: remover as bordas das páginas completas. Tive que contar pixels.
+Propósito: remover as bordas externas das páginas
 Autor: Alexandre Nassar de Peder
-Data: 02/10/2025.
-Comentários: pode excluir a pagina_enem_1.png porque é a capa, e o pagina_enem_32.png porque é o rascunho da redação
+Criação: 02/10/2025
+Atualização: 03/06/2026
+
+OBS1: puxe a pasta "imagens-convertidas" do passo 1 para essa pasta do passo 2
+OBS2: tive que contar pixels usando o GIMP para saber quanto pixels cortar de borda
 """
 
 from PIL import Image
 import os
 
-pasta_imagens = "imagens"
-pasta_saida = "recortadas"
+pasta_imagens = "imagens-convertidas"
+pasta_saida = "sem-bordas-externas"
 
 os.makedirs(pasta_saida, exist_ok=True)
 

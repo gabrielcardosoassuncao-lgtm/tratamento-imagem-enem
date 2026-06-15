@@ -1,15 +1,19 @@
 """
-Propósito: Cortar as imagens ao meio. As imagens já estão sem as bordas externas, agora só cortar ao meio
+Propósito: Cortar as imagens de colunas ao meio. As imagens já estão sem as bordas externas, agora só cortar ao meio
 Autor: Alexandre Nassar de Peder
-Data: 02/10/2025
-Comentários: Ao cortar ao meio, vai gerar uma bordinha interna. 
-Comentário 2: nesse caderno de 2024, as páginas 15, 19 (proposta de redação) e 28 não são divididas em colunas. Se atentar porque esse detalhe é importante para o passo 5
+Criação: 02/10/2025
+Atualização: 03/06/2026
+
+OBS1: puxe a pasta "sem-bordas-externas" do passo 2 para essa pasta do passo 3
+OBS2: nesse caderno de 2024, as páginas 15 e 28 são páginas inteiras. Crie uma pasta chamada "inteiras" e coloque só essas duas páginas lá
+OBS3: ao cortar ao meio, vai gerar uma bordinha interna.
+
 """
 
 from PIL import Image
 import os
 
-pasta_imagens = "recortadas"
+pasta_imagens = "sem-bordas-externas"
 pasta_saida = "divididas-com-bordas-do-meio"
 
 os.makedirs(pasta_saida, exist_ok=True)
