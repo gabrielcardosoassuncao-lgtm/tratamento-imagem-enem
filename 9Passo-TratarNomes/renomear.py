@@ -29,9 +29,9 @@ def renomear_questoes_simples():
 
         # f-string dos novos nomes. Faça a conta para transformar o número do antigo no número do novo
         # faça uma conta: se o i do teu for está em 2, e precisa virar questão 35, como você transforma 2 em 35? faça a conta e coloque dentro da concatenação
-        novo = f"questao-{i+78}-espanhol.png"  # faça uma conta: se a primeira pagina for 
-        #novo = f"questao-{i+78}-ingles.png"
-        #novo = f"questao-{i-1}.png" 
+        #novo = f"questao-{i-6}-espanhol.png"  # faça uma conta: se a primeira pagina for 
+        #novo = f"questao-{i-1}-ingles.png"
+        novo = f"questao-{i-1}.png" 
         
         mapeamento[antigo] = novo
     
