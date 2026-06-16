@@ -12,7 +12,7 @@ from PIL import Image
 import os
 import shutil
 
-def encontrar_borda_inferior(imagem, cor_alvo=(64, 193, 243), tolerancia=15):d
+def encontrar_borda_inferior(imagem, cor_alvo=(64, 193, 243), tolerancia=15):   
     """
     Encontra a borda azul descrita (4px azul, 4px branco, 4px azul) de baixo para cima
     Retorna a posição Y onde deve ser feito o corte (acima da borda) ou None se não encontrar
